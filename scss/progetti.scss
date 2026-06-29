@@ -1,0 +1,130 @@
+
+
+$primary-color: #556070;
+$accent-color: #A53DFF;
+$bg-card: rgb(245, 238, 244);
+$bg-white: #ffffff;
+$bg-img: rgba(255, 255, 255, 0.8);
+$bg-tag: rgba(255, 255, 255, 0.1);
+$text-muted: #767b82;
+$border-radius-card: 12px;
+$border-radius-btn: 20px;
+$transition: 0.3s ease;
+$card-width: 300px;
+$card-height: 400px;
+$img-height: 200px;
+
+
+
+@mixin project-img-base {
+    width: $card-width;
+    height: $img-height;
+    background-color: $bg-white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    border-radius: $border-radius-card;
+    color: $bg-img;
+}
+
+
+
+
+.portfolio {
+    background-color: $bg-white;
+    padding: 100px 0;
+
+    &-grid {
+        display: grid;
+        grid-template-columns: 400px 400px 400px;
+        column-gap: 20px;
+        row-gap: 20px;
+        justify-content: center;
+        background-color: $bg-white;
+    }
+}
+
+.section-title {
+    font-size: 50px;
+    color: $primary-color;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+
+
+
+.project-card {
+    background-color: $bg-card;
+    height: $card-height;
+    width: $card-width;
+    border-radius: $border-radius-card;
+    overflow: hidden;
+    transition: transform $transition;
+    padding: 40px;
+    box-shadow: 0px 4px 17px rgba(6, 37, 37, 0.1);
+
+    &:hover {
+        transform: translateY(-5px);        
+    }
+
+    .project-info {
+        padding: 20px;
+
+        h3 {
+            margin-bottom: 8px;
+            color: $primary-color;          
+        }
+
+        p {
+            font-size: 0.9rem;
+            color: $text-muted;             
+        }
+    }
+}
+
+
+
+
+.project-img {
+    @include project-img-base;             
+}
+
+.project-img3 {
+    @include project-img-base;             
+}
+
+
+
+.project-tag {
+    background: $bg-tag;
+    padding: 4px 12px;
+    border-radius: $border-radius-btn;
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.btn {
+    height: 48px;
+    width: 150px;
+    background: $bg-white;
+    border: solid $accent-color;
+    color: $accent-color;
+    margin-bottom: 25px;
+    margin-left: 60px;
+    margin-right: 25px;
+
+    &:hover {                           
+        background-color: $accent-color;
+        color: $bg-white;
+        transition: background-color $transition;
+    }
+}
+
+.herf {
+    text-decoration: none;
+}

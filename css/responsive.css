@@ -1,0 +1,389 @@
+@media (max-width: 768px) {
+ /* Query contatti */
+    .header {
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 999;}
+
+.header .menu {
+        position: absolute;
+        top: 60px; 
+        left: 0;
+        width: 100%;}
+    
+
+.submit-btn{
+    width: 200px;
+    height: 50px;
+}
+.input-field {
+    width: 200px;
+}
+.info-contatti {
+    width: 80vw;
+    height: auto;
+    padding: 20px;
+    margin-top: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+* Query CV */
+
+.profile-img {
+         display: flex;
+         justify-content: center;
+        flex-direction: column;
+        height: auto;
+        width: 100px;
+        border-radius: 10%;
+        margin:0%;
+    }
+    .picture{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+    }
+
+
+    .title{
+        font-size: 28px;
+    }
+    .text-1 {
+        font-size: 16px;
+        text-align: center;
+    }
+    .text-3{
+        font-size: 20px;
+        text-align: center;
+        color:#313335;
+    }
+
+.profile-info{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.text-p{
+     text-align: center;
+}
+    .text-2 {
+        font-size: 14px;
+        justify-content: center;
+    }
+    
+.experience{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+
+}
+.experience-title{
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  width: 90%;
+    margin-top: 50px;
+    font-family: 'Lora', serif;
+
+}
+.portfolio-layout{
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+    width: 70%;
+    margin-top: 50px;
+}
+.sidebar{
+    margin:0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+* Query Portfolio*/
+
+
+.progress{
+    margin:20px;
+}
+.header {
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 999;}
+
+.header .menu {
+        position: absolute;
+        top: 60px; 
+        left: 0;
+        width: 100%;
+
+
+}
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 0 20px 40px;
+        justify-content: center;
+            
+    }
+
+    .left {
+        width: 100%;
+        max-width: 100%;
+        margin: 20px 0 0 0;
+        text-align: center;
+    }
+.right {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 12px;
+        margin-left: 0;
+        margin-top: 20px;
+        width: 100%;
+        max-width: 500px;
+    }
+.Imagine-progetto{
+    width: 100%;
+}
+.case-study {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        width: 90%;
+        align-items: center;
+        justify-content: center;
+    }
+    .box, .box-1, .box-2, .box-3, .box-4 {
+        width: 90%;
+        height: auto;
+        padding: 20px 14px;
+        position: static;
+        bottom: unset;
+        justify-content: center;
+            align-items: center;
+            
+        
+    }
+
+    .about {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        margin-right: 0;
+        gap: 30px;
+        padding: 0 20px;
+    }
+
+    .about-me, .about-me1 {
+        width: 90%;
+        max-width: 360px;
+        height: auto;
+        aspect-ratio: 1 / 1;
+        left: 0;
+        top: 0;
+        margin: 0 auto;
+    }
+
+    .info-about {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .text-2 {
+        font-size: 22px;
+        margin-top: 20px;
+    }
+
+  
+
+    p {
+        font-size: 15px;
+    }
+
+.portfolio {
+        padding: 40px 0;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+        padding: 0 16px;
+        row-gap: 16px;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .project-card {
+        padding: 20px;
+    }
+
+    .project-img,
+    .project-img3 {
+        height: 200px;
+    }
+
+    .project-info {
+        padding: 10px 0;
+    }
+ .project-info h3 {
+        font-size: 1rem;
+    }
+
+
+    .header {
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 999;}
+
+.header .menu {
+        position: absolute;
+        top: 60px; 
+        left: 0;
+        width: 100%;
+}
+.btn{
+    width: 100%;
+    max-width: 200px;
+    margin: 20px auto 0 auto;
+    margin-bottom: 40px;
+    width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+}
+}
+
+@media (max-width: 650px) {
+
+     .profile {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 20px;
+    }
+
+    .profile-img {
+        margin-left: 0;     
+        margin-top: 20px;
+        width: 200px;
+        height: 230px;
+    }
+    .container {
+       width: 80%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .left {
+        margin-top: 0;
+    }
+
+    .right {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        max-width: 100%;
+    }
+
+    .box, .box-1, .box-2, .box-3, .box-4 {
+        padding: 16px 10px;
+    }
+
+    .about {
+        padding: 0 16px;
+        gap: 24px;
+    }
+
+    .about-me, .about-me1 {
+        width: 100%;
+        max-width: 300px;
+    }
+.info-about {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .text-2 {
+        font-size: 20px;
+    }
+
+    .text-3 {
+        font-size: 32px;
+    }
+
+    p {
+        font-size: 17px;
+    }
+
+.portfolio-grid {
+        gap: 14px;
+        padding: 0 12px;
+    }
+
+    .project-img,
+    .project-img3 {
+        height: 170px;
+    }
+
+    .project-info h3 {
+        font-size: 0.95rem;
+    }
+
+.info-contatti{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.input-field{
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid var(--text-muted);
+    border-radius: 5px;
+}
+.submit-btn{
+    width: 200PX;
+}
+
+.header {
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 999;}
+
+.header .menu {
+        position: absolute;
+        top: 60px; 
+        left: 0;
+        width: 100%;
+
+
+}
+
+}
+

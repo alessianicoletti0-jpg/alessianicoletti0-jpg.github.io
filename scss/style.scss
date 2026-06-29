@@ -1,0 +1,114 @@
+@import 'burger-menu';
+
+:root {
+    --primary-color: #556070;
+    --accent-color: #A53DFF;
+    --bg-menu: #ecdceb;
+    --bg-section: rgb(245, 238, 244);
+    --bg-white: #ffffff;
+    --text-muted: rgb(108, 107, 107);
+    --text-info: #767b82;
+    --transition: .2s ease-out;
+    --border-radius-card: 30px;
+    --border-radius-btn: 20px;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(media/download.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 600vh;
+}
+
+.header {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.logo {
+    color: rgb(102, 97, 97);
+    text-decoration: none;
+    font-size: 24px;
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+@include burger-menu;
+
+.info {
+    font-size: 16px;
+    color: var(--text-info);
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    height: 600px;
+}
+
+.profile-img {
+    width: 300px;
+    height: 350px;
+    border-radius: 25%;
+    margin-left: 200px;
+    margin-top: 100px;
+}
+
+.portfolio {
+    background-color: var(--bg-white);
+    padding: 100px 0;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    column-gap: 20px;
+    row-gap: 20px;
+    justify-content: center;
+    background-color: var(--bg-white);
+}
+
+.Text-4 {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-size: 40px;
+    color: var(--primary-color);
+    font-family: 'Playfair Display', serif;
+}
+
+.submit-btn {
+    width: 12vw;
+    height: 6vh;
+    border: solid var(--accent-color);
+    background-color: var(--bg-white);
+    box-shadow: 0 0 2px var(--accent-color);
+    margin-top: 50px;
+    font-size: medium;
+    border-radius: var(--border-radius-btn);
+    cursor: pointer;
+    transition: background-color var(--transition);
+}
+
+.submit-btn:hover {
+    background-color: var(--accent-color);
+    color: var(--bg-white);
+}
+
+.fine{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
