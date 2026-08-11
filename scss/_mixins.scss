@@ -1,0 +1,72 @@
+
+@mixin root-vars($map) {
+    @each $name, $value in $map {
+        --#{$name}: #{$value};
+    }
+}
+
+@mixin flex-layout($direction:row, $justify: flex-start, $align: flex-start, $wrap: nowrap){
+display: flex;
+flex-direction: $direction;
+justify-content: $justify;
+align-items: $align;
+flex-wrap: $wrap;
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin btn-base($width, $height: 48px) {
+    width: $width;
+    height: $height;
+    background: var(--bg-white);
+    color: var(--accent-color);
+    margin-bottom: 25px;
+    margin-left: 60px;
+    margin-right: 25px;
+}
+
+
+@mixin skill-box($bottom, $height: var(--box-height)) {
+    background: var(--bg-box);
+    border-radius: var(--border-radius);
+    padding: var(--padding-box);
+    display: flex;
+    flex-direction: column;
+    border: 2px solid var(--border-color);
+    box-shadow: var(--shadow);
+    height: $height;
+    width: var(--box-width);
+    margin-top: 40px;
+    position: relative;
+    bottom: $bottom;
+}
+
+@mixin sticky-header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+@mixin menu-full-width {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+}
+
+@mixin respond-to($breakpoint) {
+    @media (max-width: $breakpoint) {
+        @content;
+    }
+}
+
+@mixin margin($top: 40px, $left: 70px, $right: 70px) {
+    margin-top: $top;
+    margin-left: $left;
+    margin-right: $right;
+}

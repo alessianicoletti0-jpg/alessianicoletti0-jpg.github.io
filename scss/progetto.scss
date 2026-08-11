@@ -1,0 +1,142 @@
+@import 'variables';
+@import 'mixins';
+@import 'burger-menu';
+
+
+:root {
+    @include root-vars($base-theme);
+    @include root-vars($page-theme);
+}
+
+body {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(248, 232, 244, 0.5));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+@include burger-menu;
+
+.header {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.logo {
+    color: rgb(102, 97, 97);
+    text-decoration: none;
+    font-size: 24px;
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+
+
+
+h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+p {
+    font-family: 'Lora', serif;
+}
+
+.text-1 {
+    @include flex-center;
+    text-align: center;
+    width: 100%;
+    font-size: 40px;
+    margin: 0%;
+    font-family: 'Playfair Display', serif;
+}
+
+.project {
+    @include flex-center;
+}
+
+.nav {
+    display: flex;
+    justify-content: end;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+
+.bottone {
+    @include btn-base(150px, 48px);
+    border: 2px solid var(--accent-color);
+    margin-top: 40px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color var(--transition), color var(--transition);
+
+    &:hover {
+        background-color: var(--accent-color);
+        color: var(--bg-white);
+        text-decoration: none;
+        cursor: pointer;
+    }
+}
+
+.herf {
+    text-decoration: none;
+}
+
+
+.container {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.case-study {
+    width: 700px;
+}
+
+.site-column {
+    display: flex;
+    gap: 20px;
+}
+
+.container-box {
+    background-color: var(--bg-white);
+    padding: 20px;
+    width: 400px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    height: 250px;
+}
+
+.progetto {
+    display: flex;
+    justify-content: center;
+}
+
+.imagine-progetto1 {
+    width: 60%;
+    height: auto;
+    margin-top: 0%;
+}
+
+.imagine-progetto {
+    margin-top: 100px;
+    width: 60%;
+    height: auto;
+}
+
+.alert-success {
+    margin-top: 100px;
+}

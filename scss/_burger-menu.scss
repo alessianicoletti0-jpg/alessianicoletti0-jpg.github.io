@@ -1,0 +1,89 @@
+
+
+@mixin burger-menu {
+
+    .menu-btn {
+        display: none;
+    }
+
+    .header {
+
+        .menu-icon {
+            cursor: pointer;
+            padding: 20px;
+            position: relative;
+            user-select: none;
+
+            .navicon {
+                background: rgb(130, 126, 126);
+                display: block;
+                height: 2px;
+                position: relative;
+                transition: background var(--transition);
+                width: 25px;
+
+                &::before,
+                &::after {
+                    background: rgb(112, 106, 106);
+                    content: '';
+                    display: block;
+                    height: 100%;
+                    position: absolute;
+                    transition: all var(--transition);
+                    width: 100%;
+                }
+
+                &::before {
+                    top: 8px;
+                }
+
+                &::after {
+                    top: -8px;
+                }
+            }
+        }
+
+        .menu {
+            position: absolute;
+            top: 60px;
+            left: 0;
+            width: 100%;
+            background: var(--bg-menu);
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            overflow: hidden;
+            max-height: 0;
+            transition: max-height 0.3s ease-out;
+
+            li a {
+                display: block;
+                padding: 20px;
+                color: var(--text-muted);
+                text-decoration: none;
+                border-bottom: 1px solid #eeeaee;
+            }
+        }
+    }
+
+    .menu-btn:checked {
+
+        ~ .menu-icon .navicon {
+            background: transparent;
+
+            &::before {
+                transform: rotate(-45deg);
+                top: 0;
+            }
+
+            &::after {
+                transform: rotate(45deg);
+                top: 0;
+            }
+        }
+
+        ~ .menu {
+            max-height: 240px;
+        }
+    }
+}

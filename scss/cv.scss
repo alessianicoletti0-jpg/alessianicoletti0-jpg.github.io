@@ -1,0 +1,242 @@
+@import 'variables';
+@import 'mixins';
+@import 'burger-menu';
+
+body {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(248, 232, 244, 0.5));
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+
+:root {
+    @include root-vars($base-theme);
+    @include root-vars($page-theme);
+}
+
+@include burger-menu;
+
+.header {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.logo {
+    color: rgb(102, 97, 97);
+    text-decoration: none;
+    font-size: 24px;
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+.header .menu-icon {
+    cursor: pointer;
+    padding: 20px;
+    position: relative;
+    user-select: none;
+}
+
+
+.title {
+    font-size: 40px;
+    color: var(--primary-color);
+    margin: 5%;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
+
+.text-1 {
+    font-size: 18px;
+    color: var(--text-muted);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Lora', serif;
+}
+
+.profile-img {
+    width: 300px;
+    height: 350px;
+    border-radius: 25%;
+    margin-left: 200px;
+    margin-top: 100px;
+}
+
+.picture {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile-info {
+    flex: 1;
+    text-align: center;
+}
+
+.experience {
+    @include flex-center;
+}
+
+.experience-title {
+    @include flex-center;
+    width: 100%;
+    margin-top: 100px;
+    font-family: 'Lora', serif;
+}
+
+
+.portfolio-layout {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    flex-direction: row-reverse;
+}
+
+.sidebar {
+    width: 300px;
+    background-color: #28878b;
+    color: #ffffff;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-left: 100px;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.profile-card {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+    max-width: 900px;
+}
+
+.profile-img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 40px;
+}
+
+.alert-success {
+    margin-top: 100px;
+}
+
+.progress {
+    height: 20px;
+    margin: 10px;
+}
+
+
+@include respond-to(650px) {
+
+    .profile-img {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: auto;
+        width: 100px;
+        border-radius: 10%;
+        margin: 0%;
+    }
+
+    .picture {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+    }
+
+    .title {
+        font-size: 28px;
+    }
+
+    .text-1 {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .text-3 {
+        font-size: 20px;
+        text-align: center;
+        color: #313335;
+    }
+
+    .profile-info {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .text-p {
+        text-align: center;
+    }
+
+    .text-2 {
+        font-size: 14px;
+        justify-content: center;
+    }
+
+    .experience {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 300px;
+    }
+
+    .experience-title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        margin-top: 50px;
+        font-family: 'Lora', serif;
+    }
+
+    .portfolio-layout {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 70%;
+        margin-top: 50px;
+    }
+
+    .sidebar {
+        margin: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .progress {
+        margin: 20px;
+    }
+
+    .header {
+        @include sticky-header;
+    }
+
+    .header .menu {
+        @include menu-full-width;
+    }
+}

@@ -1,0 +1,301 @@
+body {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(248, 232, 244, 0.5));
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+:root {
+  --primary-color: #556070;
+  --accent-color: #A53DFF;
+  --bg-menu: #ecdceb;
+  --bg-white: #ffffff;
+  --text-muted: rgb(108, 107, 107);
+  --transition: 0.2s ease-out;
+  --border-color: #e0e0e0;
+}
+
+.menu-btn {
+  display: none;
+}
+
+.header .menu-icon {
+  cursor: pointer;
+  padding: 20px;
+  position: relative;
+  user-select: none;
+}
+.header .menu-icon .navicon {
+  background: rgb(130, 126, 126);
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background var(--transition);
+  width: 25px;
+}
+.header .menu-icon .navicon::before, .header .menu-icon .navicon::after {
+  background: rgb(112, 106, 106);
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all var(--transition);
+  width: 100%;
+}
+.header .menu-icon .navicon::before {
+  top: 8px;
+}
+.header .menu-icon .navicon::after {
+  top: -8px;
+}
+.header .menu {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background: var(--bg-menu);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease-out;
+}
+.header .menu li a {
+  display: block;
+  padding: 20px;
+  color: var(--text-muted);
+  text-decoration: none;
+  border-bottom: 1px solid #eeeaee;
+}
+
+.menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+.menu-btn:checked ~ .menu-icon .navicon::before {
+  transform: rotate(-45deg);
+  top: 0;
+}
+.menu-btn:checked ~ .menu-icon .navicon::after {
+  transform: rotate(45deg);
+  top: 0;
+}
+.menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.logo {
+  color: rgb(102, 97, 97);
+  text-decoration: none;
+  font-size: 24px;
+  padding-left: 20px;
+  font-weight: bold;
+}
+
+.header .menu-icon {
+  cursor: pointer;
+  padding: 20px;
+  position: relative;
+  user-select: none;
+}
+
+.title {
+  font-size: 40px;
+  color: var(--primary-color);
+  margin: 5%;
+  font-family: "Playfair Display", serif;
+  text-align: center;
+}
+
+.text-1 {
+  font-size: 18px;
+  color: var(--text-muted);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: "Lora", serif;
+}
+
+.profile-img {
+  width: 300px;
+  height: 350px;
+  border-radius: 25%;
+  margin-left: 200px;
+  margin-top: 100px;
+}
+
+.picture {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.profile-info {
+  flex: 1;
+  text-align: center;
+}
+
+.experience {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.experience-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 100px;
+  font-family: "Lora", serif;
+}
+
+.portfolio-layout {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  flex-direction: row-reverse;
+}
+
+.sidebar {
+  width: 300px;
+  background-color: #28878b;
+  color: #ffffff;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-left: 100px;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.profile-card {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: center;
+  max-width: 900px;
+}
+
+.profile-img {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 40px;
+}
+
+.alert-success {
+  margin-top: 100px;
+}
+
+.progress {
+  height: 20px;
+  margin: 10px;
+}
+
+@media (max-width: 650px) {
+  .profile-img {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    width: 100px;
+    border-radius: 10%;
+    margin: 0%;
+  }
+  .picture {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+  }
+  .title {
+    font-size: 28px;
+  }
+  .text-1 {
+    font-size: 16px;
+    text-align: center;
+  }
+  .text-3 {
+    font-size: 20px;
+    text-align: center;
+    color: #313335;
+  }
+  .profile-info {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .text-p {
+    text-align: center;
+  }
+  .text-2 {
+    font-size: 14px;
+    justify-content: center;
+  }
+  .experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+  }
+  .experience-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin-top: 50px;
+    font-family: "Lora", serif;
+  }
+  .portfolio-layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    margin-top: 50px;
+  }
+  .sidebar {
+    margin: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .progress {
+    margin: 20px;
+  }
+  .header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+  }
+  .header .menu {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+  }
+}

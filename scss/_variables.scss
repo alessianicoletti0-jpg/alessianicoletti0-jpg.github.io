@@ -1,0 +1,25 @@
+
+$base-theme: (
+    primary-color: #556070,
+    accent-color: #A53DFF,
+    bg-menu: #ecdceb,
+    bg-white: #ffffff,
+    text-muted: rgb(108, 107, 107),
+    transition: .2s ease-out,
+);
+
+$content-theme: (
+    bg-container: rgb(245, 223, 232),
+    bg-box: rgba(255, 255, 255, 0.7),
+    bg-card: rgb(245, 238, 244),
+    bg-section: rgb(245, 238, 244),
+    text-info: #767b82,
+    border-radius-card: 30px,
+    border-radius-btn: 20px,
+    border-radius: 16px,
+    padding-box: 24px,
+);
+
+$page-theme: (
+    border-color: #e0e0e0,
+);
