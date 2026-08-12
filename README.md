@@ -13,28 +13,28 @@ Il sito presenta le competenze, i progetti e l'esperienza professionale, con una
 - **EmailJS** — invio del form di contatti direttamente dal browser, senza backend
 - 
 📁 Struttura del progetto
-├── index.html
-├── cv.html
-├── contatti.html
-├── orizonbipro.html
-├── portfoliopro.html
-├── progettoaccess.html
-├── progettobillding.html
-├── progettobuddhify.html
-├── progettoorizon.html
-├── css/                    # fogli di stile compilati 
-│   ├── style.css
-│   ├── contatti.css
-│   ├── cv.css
-│   ├── progetto.css
-│   └── responsive.css
-├── scss/                   # sorgenti Sass 
-│   ├── _variables.scss
-│   ├── _mixins.scss
-│   ├── _burger-menu.scss
-│   ├── style.scss
-│   ├── contatti.scss
-│   ├── cv.scss
-│   ├── progetto.scss
-│   └── responsive.scss
+├── index.html                                                                                 
+├── cv.html                                                                                 
+├── contatti.html                                                                                 
+├── orizonbipro.html                                                                                 
+├── portfoliopro.html                                                                                 
+├── progettoaccess.html                                                                                 
+├── progettobillding.html                                                                                 
+├── progettobuddhify.html                                                                                 
+├── progettoorizon.html                                                                                 
+├── css/                    # fogli di stile compilati                                                                                  
+│   ├── style.css                                                                                 
+│   ├── contatti.css                                                                                 
+│   ├── cv.css                                                                                 
+│   ├── progetto.css                                                                                 
+│   └── responsive.css                                                                                 
+├── scss/                   # sorgenti Sass                                                                                  
+│   ├── _variables.scss                                                                                 
+│   ├── _mixins.scss                                                                                 
+│   ├── _burger-menu.scss                                                                                 
+│   ├── style.scss                                                                                 
+│   ├── contatti.scss                                                                                 
+│   ├── cv.scss                                                                                 
+│   ├── progetto.scss                                                                                 
+│   └── responsive.scss                                                                                 
 └── media/                  # immagini e icone
