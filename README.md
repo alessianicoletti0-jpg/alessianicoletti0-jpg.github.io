@@ -12,7 +12,7 @@ Il sito presenta le competenze, i progetti e l'esperienza professionale, con una
 - **Google Fonts** — Lora e Playfair Display
 - **EmailJS** — invio del form di contatti direttamente dal browser, senza backend
 - 
-📁 Struttura del progetto
+📁 Struttura del progetto                                                                                                                            
 ├── index.html                                                                                 
 ├── cv.html                                                                                 
 ├── contatti.html                                                                                 
